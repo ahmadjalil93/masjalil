@@ -1,0 +1,104 @@
+/* Pusatkan teks pada elemen yang menggunakan kelas .center */
+.center {
+    text-align: center;
+}
+
+/* Mengatur wadah utama box agar lebarnya 80% dari layar dan berada di tengah */
+#box {
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100vh; /* Tinggi minimum 100% dari viewport */
+    display: flex;
+    flex-direction: column; /* Mengatur agar elemen di dalamnya mengikuti kolom */
+    background-color: green; /* Ganti dengan warna biru */
+}
+
+/* Gaya untuk header, termasuk warna latar belakang dan padding */
+#header {
+    background-color: rgba(242, 242, 242, 0.8); /* Warna latar belakang setengah transparan */
+    padding: 20px;
+}
+
+
+/* Mengatur menu bar dengan warna latar hitam dan padding */
+#menubar {
+    background-color: #333;
+    padding: 10px;
+}
+
+/* Gaya untuk link di dalam menu bar, teks berwarna putih dan tanpa garis bawah */
+#menubar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px; /* Memberikan jarak antar link */
+}
+
+/* Efek hover untuk link, menambahkan garis bawah saat mouse diarahkan ke link */
+#menubar a:hover {
+    text-decoration: underline;
+}
+
+/* Mengatur konten menggunakan Flexbox, kolom-kolom berada dalam satu baris */
+.flex-container {
+    display: flex;
+    justify-content: space-between; /* Jarak antar kolom disebar secara merata */
+    padding: 20px;
+    flex-grow: 1; /* Memastikan konten menempati sisa ruang yang tersedia */
+}
+
+/* Mengatur kolom kiri agar lebih besar dengan lebar 70% */
+.left-column {
+    width: 70%;
+    min-height: 100%; /* Mengatur tinggi minimum agar sama dengan kontainer */
+}
+
+/* Mengatur kolom kanan agar lebih kecil dengan lebar 25% */
+.right-column {
+    width: 25%;
+    min-height: 100%; /* Mengatur tinggi minimum agar sama dengan kontainer */
+}
+
+/* Gaya umum untuk kedua kolom: latar belakang, padding, margin, border, dan bayangan */
+.column {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin: 10px;
+    border: 1px solid #ccc; /* Border abu-abu terang */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Memastikan konten ada di bagian atas kolom */
+}
+
+/* Gaya untuk artikel di kolom kiri */
+article {
+    margin-bottom: 20px;
+}
+
+/* Gaya untuk kategori di kolom kanan */
+.right-column ul {
+    list-style-type: none; /* Hilangkan bullet point pada daftar */
+    padding: 0;
+}
+
+.right-column ul li {
+    margin-bottom: 10px;
+}
+
+/* Gaya untuk link dalam kategori */
+.right-column ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.right-column ul li a:hover {
+    text-decoration: underline;
+    color: #007BFF; /* Ubah warna saat hover */
+}
+
+/* Gaya untuk footer, warna latar belakang abu-abu terang dan padding */
+#footer {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+}
